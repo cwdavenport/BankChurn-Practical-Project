@@ -6,7 +6,7 @@ ENV USER ${NB_USER}
 ENV NB_UID ${NB_UID}
 ENV HOME /home/${NB_USER}
     
-RUN pip install sweetviz && pip install xgboost && pip install scikitplot && pip install graphviz
+RUN pip install sweetviz && pip install xgboost && pip install scikit-plot && pip install graphviz
 
 COPY . ${HOME}
 USER root
